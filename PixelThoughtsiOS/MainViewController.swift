@@ -10,11 +10,11 @@ import UIKit
 import SpriteKit
 import AVFoundation
 
-class MainViewController: UIViewController, StarViewAnimation {
+class MainViewController: UIViewController, StarViewAnimation, UITextFieldDelegate {
     
     @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var message: UILabel!
-    @IBOutlet weak var button: UIButton!
+//    @IBOutlet weak var button: UIButton!
     let duration = 60.0
     
     let stars = StarsView()
@@ -30,13 +30,21 @@ class MainViewController: UIViewController, StarViewAnimation {
     var endingMessage = "Hope you feel a little less stressed and a little more connected"
     var messages = DataProvider.sharedInstance().messegesProvider.messages()
     
+    // MARK: Constrains
+    var starYCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(stars)
         self.view.addSubview(star)
         self.view.sendSubviewToBack(stars)
         self.setupConstraints()
-        textfield.text = "Some thought"
+//        textfield.text = "Some thought"
         
         let player : AVAudioPlayer
         
@@ -58,11 +66,11 @@ class MainViewController: UIViewController, StarViewAnimation {
         self.setupEndingScene()
     }
     
-    @IBAction func start(sender: AnyObject) {
-        if let text = self.textfield.text {
-            self.startAnimating(text)
-        }
-    }
+//    @IBAction func start(sender: AnyObject) {
+//        if let text = self.textfield.text {
+//            self.startAnimating(text)
+//        }
+//    }
     //MARK: Private
     
     func startAnimating(text: String) {
@@ -73,11 +81,11 @@ class MainViewController: UIViewController, StarViewAnimation {
     func setupMovingScene() {
         self.star.start(duration: duration)
         self.message.animate(titles: messages, duration: duration)
-        self.button.hidden = true
+//        self.button.hidden = true
     }
     
     func setupEndingScene() {
-        self.button.hidden = false
+//        self.button.hidden = false
         self.message.text = self.endingMessage
         self.star.reload()
     }
@@ -101,8 +109,8 @@ class MainViewController: UIViewController, StarViewAnimation {
         let starXCenterConstraint = NSLayoutConstraint(item: self.view, attribute: .CenterX, relatedBy: .Equal, toItem: star, attribute: .CenterX, multiplier: 1, constant: 0)
         self.view.addConstraint(starXCenterConstraint)
         
-        let starYCenterConstraint = NSLayoutConstraint(item: self.view, attribute: .CenterY, relatedBy: .Equal, toItem: star, attribute: .CenterY, multiplier: 1, constant: 0)
-        self.view.addConstraint(starYCenterConstraint)
+        self.starYCenterConstraint = NSLayoutConstraint(item: self.view, attribute: .CenterY, relatedBy: .Equal, toItem: star, attribute: .CenterY, multiplier: 1, constant: 0)
+        self.view.addConstraint(self.starYCenterConstraint)
         
         let starWidthConstraint = NSLayoutConstraint(item: star, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 0.5, constant: 0)
         
@@ -112,6 +120,41 @@ class MainViewController: UIViewController, StarViewAnimation {
         
         self.view.addConstraint(starWidthConstraint)
     }
+    
+    // MARK: - UITextFieldDelegate Methods
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+        // Move all up
+        self.starYCenterConstraint.constant = 100
+        self.textFieldBottomConstraint.constant = 275
+        
+        UIView.animateWithDuration(0.35) { () -> Void in
+            // Move Up
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        // Move all down
+        self.starYCenterConstraint.constant = 0
+        self.textFieldBottomConstraint.constant = 65
+        UIView.animateWithDuration(0.35) { () -> Void in
+            // Move down
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        if let text = textField.text {
+            self.startAnimating(text)
+        }
+        
+        return true
+    }
+    
 }
 
 

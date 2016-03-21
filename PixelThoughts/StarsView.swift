@@ -49,12 +49,24 @@ class StarsView: UIView {
     
     private func prepare()
     {
+        
+        var bigSize = 10
+        var mediumSize = 6
+        var smallSize = 2
+        
+        #if iOS
+            bigSize = 4
+            mediumSize = 3
+            smallSize = 2
+        #endif
+    
         guard let
-            closeCell = self.star(speed: 80, lifetime: Float(self.frame.size.height) * 20, size: CGSize(width:10, height:10), birthRate: 1, color: UIColor.whiteColor()),
+    
+            closeCell = self.star(speed: 80, lifetime: Float(self.frame.size.height) * 20, size: CGSize(width:bigSize, height:bigSize), birthRate: 1, color: UIColor.whiteColor()),
             
-            nearCell = self.star(speed: 24, lifetime: Float(self.frame.size.height), size: CGSize(width:6, height:6), birthRate: 3, color: UIColor.whiteColor()),
+            nearCell = self.star(speed: 24, lifetime: Float(self.frame.size.height), size: CGSize(width:mediumSize, height:mediumSize), birthRate: 3, color: UIColor.whiteColor()),
             
-            farCell = self.star(speed: 18, lifetime: Float(self.frame.size.height), size: CGSize(width:2, height:2), birthRate: 20, color: UIColor.whiteColor())
+            farCell = self.star(speed: 18, lifetime: Float(self.frame.size.height), size: CGSize(width:smallSize, height:smallSize), birthRate: 20, color: UIColor.whiteColor())
             
             else {
                 return
