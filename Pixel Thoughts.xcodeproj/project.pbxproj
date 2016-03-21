@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0764625C1C1F3728007375A0 /* Build configuration list for PBXProject "PixelThoughts" */;
+			buildConfigurationList = 0764625C1C1F3728007375A0 /* Build configuration list for PBXProject "Pixel Thoughts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -437,12 +437,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tatarasanu Victor (D3THL7H6JB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tatarasanu Victor (86F36CDK5Z)";
 				INFOPLIST_FILE = PixelThoughts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughts;
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.pixel.thoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "92be2269-b5d7-4081-8678-b621d1e09a01";
+				PROVISIONING_PROFILE = "b4de61b6-0cfb-4515-b2c9-7e4ef39fb388";
 			};
 			name = Debug;
 		};
@@ -455,7 +455,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Tatarasanu Victor (D3THL7H6JB)";
 				INFOPLIST_FILE = PixelThoughts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughts;
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.pixel.thoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "92be2269-b5d7-4081-8678-b621d1e09a01";
 			};
@@ -488,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0764625C1C1F3728007375A0 /* Build configuration list for PBXProject "PixelThoughts" */ = {
+		0764625C1C1F3728007375A0 /* Build configuration list for PBXProject "Pixel Thoughts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				076462791C1F3728007375A0 /* Debug */,
