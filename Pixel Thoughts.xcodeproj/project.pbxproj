@@ -22,8 +22,23 @@
 		07D035BD1C29A0AA0054BE6E /* StarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035BC1C29A0AA0054BE6E /* StarsService.swift */; };
 		07D035BF1C29AEF60054BE6E /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035BE1C29AEF60054BE6E /* StarView.swift */; };
 		07D035C31C29CCD50054BE6E /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035C21C29CCD50054BE6E /* ResultsController.swift */; };
-		4E740DB9850A4FE8CB164432 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2BB39D61996023922D5AC2 /* Pods.framework */; };
+		23F4627223200DC7CBB86BEE /* Pods_PixelThoughtsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E909ACEC3F081A6464FC0AE4 /* Pods_PixelThoughtsiOS.framework */; };
+		57B0C6121CA056070005328E /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 07BCA58B1C297C4400366F4F /* sound.m4a */; };
+		57B0C6131CA056110005328E /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035B81C298A140054BE6E /* StarsView.swift */; };
+		57B0C6141CA056110005328E /* UIImage+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035BA1C298B9A0054BE6E /* UIImage+Circle.swift */; };
+		57B0C6151CA056110005328E /* StarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035BC1C29A0AA0054BE6E /* StarsService.swift */; };
+		57B0C6161CA056110005328E /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D035BE1C29AEF60054BE6E /* StarView.swift */; };
+		57B0C6171CA056110005328E /* UILabel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070EE1681C29DE5200333EBB /* UILabel+Animation.swift */; };
+		57B0C6181CA056110005328E /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764AF1B1C29FCA20064AE3D /* Array+Additions.swift */; };
+		57B0C6191CA056110005328E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073081681C2A008B00131CD9 /* DataProvider.swift */; };
+		57B0C61A1CA056110005328E /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730816A1C2A063B00131CD9 /* AppDefaults.swift */; };
+		57C12BD51CA052F6005AA527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C12BD41CA052F6005AA527 /* AppDelegate.swift */; };
+		57C12BD71CA052F6005AA527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C12BD61CA052F6005AA527 /* ViewController.swift */; };
+		57C12BDA1CA052F6005AA527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C12BD81CA052F6005AA527 /* Main.storyboard */; };
+		57C12BDC1CA052F6005AA527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C12BDB1CA052F6005AA527 /* Assets.xcassets */; };
+		57C12BDF1CA052F6005AA527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C12BDD1CA052F6005AA527 /* LaunchScreen.storyboard */; };
 		5E7F22B41C2015EB007E0BCA /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7F22B31C2015EB007E0BCA /* SceneKit.framework */; };
+		E2E3FB85B09541B7BA16C5EE /* Pods_PixelThoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43D190BE565086BE8AD0225 /* Pods_PixelThoughts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +72,21 @@
 		07D035BE1C29AEF60054BE6E /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		07D035C11C29C9650054BE6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		07D035C21C29CCD50054BE6E /* ResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelThoughtsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelThoughtsiOS/Pods-PixelThoughtsiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		57C12BD21CA052F6005AA527 /* PixelThoughtsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelThoughtsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C12BD41CA052F6005AA527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57C12BD61CA052F6005AA527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57C12BD91CA052F6005AA527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57C12BDB1CA052F6005AA527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57C12BDE1CA052F6005AA527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57C12BE01CA052F6005AA527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E7F22B31C2015EB007E0BCA /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		658C7043446F95704D440227 /* Pods-PixelThoughtsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelThoughtsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixelThoughtsiOS/Pods-PixelThoughtsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		A25AF9BDB5639D0B00F0031B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C43D190BE565086BE8AD0225 /* Pods_PixelThoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelThoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D58ED39C05EE6AD29FDEC8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2BB39D61996023922D5AC2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E909ACEC3F081A6464FC0AE4 /* Pods_PixelThoughtsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelThoughtsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7F22B41C2015EB007E0BCA /* SceneKit.framework in Frameworks */,
-				4E740DB9850A4FE8CB164432 /* Pods.framework in Frameworks */,
+				E2E3FB85B09541B7BA16C5EE /* Pods_PixelThoughts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +103,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57C12BCF1CA052F6005AA527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F4627223200DC7CBB86BEE /* Pods_PixelThoughtsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +122,7 @@
 			children = (
 				076462631C1F3728007375A0 /* PixelThoughts */,
 				076462751C1F3728007375A0 /* PixelThoughtsTests */,
+				57C12BD31CA052F6005AA527 /* PixelThoughtsiOS */,
 				076462621C1F3728007375A0 /* Products */,
 				1F8BC8E094CE42D34B988C90 /* Pods */,
 				B254DD7C09A1470BE9921FF6 /* Frameworks */,
@@ -99,6 +134,7 @@
 			children = (
 				076462611C1F3728007375A0 /* PixelThoughts.app */,
 				076462721C1F3728007375A0 /* PixelThoughtsTests.xctest */,
+				57C12BD21CA052F6005AA527 /* PixelThoughtsiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,14 +176,31 @@
 			children = (
 				C6D58ED39C05EE6AD29FDEC8 /* Pods.debug.xcconfig */,
 				A25AF9BDB5639D0B00F0031B /* Pods.release.xcconfig */,
+				177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */,
+				658C7043446F95704D440227 /* Pods-PixelThoughtsiOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		57C12BD31CA052F6005AA527 /* PixelThoughtsiOS */ = {
+			isa = PBXGroup;
+			children = (
+				57C12BD41CA052F6005AA527 /* AppDelegate.swift */,
+				57C12BD61CA052F6005AA527 /* ViewController.swift */,
+				57C12BD81CA052F6005AA527 /* Main.storyboard */,
+				57C12BDB1CA052F6005AA527 /* Assets.xcassets */,
+				57C12BDD1CA052F6005AA527 /* LaunchScreen.storyboard */,
+				57C12BE01CA052F6005AA527 /* Info.plist */,
+			);
+			path = PixelThoughtsiOS;
 			sourceTree = "<group>";
 		};
 		B254DD7C09A1470BE9921FF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DF2BB39D61996023922D5AC2 /* Pods.framework */,
+				C43D190BE565086BE8AD0225 /* Pods_PixelThoughts.framework */,
+				E909ACEC3F081A6464FC0AE4 /* Pods_PixelThoughtsiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +246,26 @@
 			productReference = 076462721C1F3728007375A0 /* PixelThoughtsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		57C12BD11CA052F6005AA527 /* PixelThoughtsiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57C12BE31CA052F6005AA527 /* Build configuration list for PBXNativeTarget "PixelThoughtsiOS" */;
+			buildPhases = (
+				B681AD4E03028D7F1F6C05C1 /* Check Pods Manifest.lock */,
+				57C12BCE1CA052F6005AA527 /* Sources */,
+				57C12BCF1CA052F6005AA527 /* Frameworks */,
+				57C12BD01CA052F6005AA527 /* Resources */,
+				EEA4A6381E999920D8769D77 /* Embed Pods Frameworks */,
+				E1B69EFE81015160DE8E25E2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelThoughtsiOS;
+			productName = PixelThoughtsiOS;
+			productReference = 57C12BD21CA052F6005AA527 /* PixelThoughtsiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +284,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 076462601C1F3728007375A0;
 					};
+					57C12BD11CA052F6005AA527 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 0764625C1C1F3728007375A0 /* Build configuration list for PBXProject "Pixel Thoughts" */;
@@ -228,6 +304,7 @@
 			targets = (
 				076462601C1F3728007375A0 /* PixelThoughts */,
 				076462711C1F3728007375A0 /* PixelThoughtsTests */,
+				57C12BD11CA052F6005AA527 /* PixelThoughtsiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -250,10 +327,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57C12BD01CA052F6005AA527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C12BDF1CA052F6005AA527 /* LaunchScreen.storyboard in Resources */,
+				57C12BDC1CA052F6005AA527 /* Assets.xcassets in Resources */,
+				57B0C6121CA056070005328E /* sound.m4a in Resources */,
+				57C12BDA1CA052F6005AA527 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		7D6871C4B838D26C56B1172F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B681AD4E03028D7F1F6C05C1 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +383,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelThoughts/Pods-PixelThoughts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B69EFE81015160DE8E25E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelThoughtsiOS/Pods-PixelThoughtsiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA4A6381E999920D8769D77 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelThoughtsiOS/Pods-PixelThoughtsiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2DB3521E1EC0AB80EAD2C1A /* Copy Pods Resources */ = {
@@ -295,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelThoughts/Pods-PixelThoughts-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -327,6 +460,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57C12BCE1CA052F6005AA527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B0C6161CA056110005328E /* StarView.swift in Sources */,
+				57B0C61A1CA056110005328E /* AppDefaults.swift in Sources */,
+				57B0C6181CA056110005328E /* Array+Additions.swift in Sources */,
+				57C12BD71CA052F6005AA527 /* ViewController.swift in Sources */,
+				57B0C6151CA056110005328E /* StarsService.swift in Sources */,
+				57B0C6141CA056110005328E /* UIImage+Circle.swift in Sources */,
+				57B0C6131CA056110005328E /* StarsView.swift in Sources */,
+				57B0C6191CA056110005328E /* DataProvider.swift in Sources */,
+				57C12BD51CA052F6005AA527 /* AppDelegate.swift in Sources */,
+				57B0C6171CA056110005328E /* UILabel+Animation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -347,11 +497,28 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		57C12BD81CA052F6005AA527 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57C12BD91CA052F6005AA527 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57C12BDD1CA052F6005AA527 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57C12BDE1CA052F6005AA527 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		076462791C1F3728007375A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -433,7 +600,7 @@
 		};
 		0764627C1C1F3728007375A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6D58ED39C05EE6AD29FDEC8 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -448,7 +615,7 @@
 		};
 		0764627D1C1F3728007375A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A25AF9BDB5639D0B00F0031B /* Pods.release.xcconfig */;
+			baseConfigurationReference = 658C7043446F95704D440227 /* Pods-PixelThoughtsiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -485,6 +652,38 @@
 			};
 			name = Release;
 		};
+		57C12BE11CA052F6005AA527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PixelThoughtsiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits..PixelThoughtsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57C12BE21CA052F6005AA527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658C7043446F95704D440227 /* Pods-PixelThoughtsiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PixelThoughtsiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits..PixelThoughtsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +710,15 @@
 			buildConfigurations = (
 				0764627F1C1F3728007375A0 /* Debug */,
 				076462801C1F3728007375A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57C12BE31CA052F6005AA527 /* Build configuration list for PBXNativeTarget "PixelThoughtsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C12BE11CA052F6005AA527 /* Debug */,
+				57C12BE21CA052F6005AA527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
