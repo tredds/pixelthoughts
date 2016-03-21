@@ -290,6 +290,7 @@
 					};
 					57C12BD11CA052F6005AA527 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D3THL7H6JB;
 					};
 				};
 			};
@@ -674,7 +675,8 @@
 			baseConfigurationReference = 177E97FD68754CF4909BCADA /* Pods-PixelThoughtsiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tatarasanu Victor (86F36CDK5Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tatarasanu Victor (86F36CDK5Z)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -684,8 +686,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DiOS";
-				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughtsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "10901ed0-f0a3-4c4e-afb7-5fbeb9b22443";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -696,7 +699,8 @@
 			baseConfigurationReference = 658C7043446F95704D440227 /* Pods-PixelThoughtsiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tatarasanu Victor (86F36CDK5Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tatarasanu Victor (86F36CDK5Z)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -706,8 +710,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DiOS";
-				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughtsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = agency.qbits.PixelThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "10901ed0-f0a3-4c4e-afb7-5fbeb9b22443";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

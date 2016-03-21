@@ -71,7 +71,7 @@ class StarView : UIView {
     //MARK: Private
     
     private func setupTitle() {
-        title.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+//        title.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
         title.textColor = UIColor.blackColor()
         title.numberOfLines = 0
         title.text = " "
@@ -85,7 +85,7 @@ class StarView : UIView {
         let yCenterConstraint = NSLayoutConstraint(item: self, attribute: .CenterY, relatedBy: .Equal, toItem: title, attribute: .CenterY, multiplier: 1, constant: 0)
         self.addConstraint(yCenterConstraint)
         
-        let widthConstraint = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: title, attribute: .Width, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: title, attribute: .Width, multiplier: 1, constant: 20)
         self.addConstraint(widthConstraint)
     }
     

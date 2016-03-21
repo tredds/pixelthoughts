@@ -51,22 +51,38 @@ class StarsView: UIView {
     {
         
         var bigSize = 10
+        var bigBirthrate: Float = 1.0
+        var bigSpeed: CGFloat = 80
+        
         var mediumSize = 6
+        var mediumBirthrate: Float = 3.0
+        var mediumSpeed: CGFloat = 24
+        
         var smallSize = 2
+        var smallBirthrate: Float = 20.0
+        var smallSpeed: CGFloat = 18
         
         #if iOS
-            bigSize = 4
-            mediumSize = 3
-            smallSize = 2
+            bigSize = 3
+            mediumSize = 2
+            smallSize = 1
+            
+            bigBirthrate = 1
+            mediumBirthrate = 2
+            smallBirthrate = 6
+            
+            bigSpeed = 30
+            mediumSpeed = 14
+            smallSpeed = 9
         #endif
     
         guard let
     
-            closeCell = self.star(speed: 80, lifetime: Float(self.frame.size.height) * 20, size: CGSize(width:bigSize, height:bigSize), birthRate: 1, color: UIColor.whiteColor()),
+            closeCell = self.star(speed: bigSpeed, lifetime: Float(self.frame.size.height) * 20, size: CGSize(width:bigSize, height:bigSize), birthRate: bigBirthrate, color: UIColor.whiteColor()),
             
-            nearCell = self.star(speed: 24, lifetime: Float(self.frame.size.height), size: CGSize(width:mediumSize, height:mediumSize), birthRate: 3, color: UIColor.whiteColor()),
+            nearCell = self.star(speed: mediumSpeed, lifetime: Float(self.frame.size.height), size: CGSize(width:mediumSize, height:mediumSize), birthRate: mediumBirthrate, color: UIColor.whiteColor()),
             
-            farCell = self.star(speed: 18, lifetime: Float(self.frame.size.height), size: CGSize(width:smallSize, height:smallSize), birthRate: 20, color: UIColor.whiteColor())
+            farCell = self.star(speed: smallSpeed, lifetime: Float(self.frame.size.height), size: CGSize(width:smallSize, height:smallSize), birthRate: smallBirthrate, color: UIColor.whiteColor())
             
             else {
                 return

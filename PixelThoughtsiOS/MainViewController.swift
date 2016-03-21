@@ -44,7 +44,7 @@ class MainViewController: UIViewController, StarViewAnimation, UITextFieldDelega
         self.view.addSubview(star)
         self.view.sendSubviewToBack(stars)
         self.setupConstraints()
-//        textfield.text = "Some thought"
+        self.setupTapGesture()
         
         let player : AVAudioPlayer
         
@@ -66,11 +66,6 @@ class MainViewController: UIViewController, StarViewAnimation, UITextFieldDelega
         self.setupEndingScene()
     }
     
-//    @IBAction func start(sender: AnyObject) {
-//        if let text = self.textfield.text {
-//            self.startAnimating(text)
-//        }
-//    }
     //MARK: Private
     
     func startAnimating(text: String) {
@@ -81,11 +76,12 @@ class MainViewController: UIViewController, StarViewAnimation, UITextFieldDelega
     func setupMovingScene() {
         self.star.start(duration: duration)
         self.message.animate(titles: messages, duration: duration)
-//        self.button.hidden = true
+        self.textfield.hidden = true
     }
     
     func setupEndingScene() {
-//        self.button.hidden = false
+        self.textfield.hidden = false
+        self.textfield.text = ""
         self.message.text = self.endingMessage
         self.star.reload()
     }
@@ -113,12 +109,19 @@ class MainViewController: UIViewController, StarViewAnimation, UITextFieldDelega
         self.view.addConstraint(self.starYCenterConstraint)
         
         let starWidthConstraint = NSLayoutConstraint(item: star, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 0.5, constant: 0)
+        self.view.addConstraint(starWidthConstraint)
         
         let starHeightConstraint = NSLayoutConstraint(item: star, attribute: .Height, relatedBy: .Equal, toItem: star, attribute: .Width, multiplier: 1, constant: 0)
         self.view.addConstraint(starHeightConstraint)
-        
-        
-        self.view.addConstraint(starWidthConstraint)
+    }
+    
+    func setupTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: "tapAction")
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func tapAction() {
+        self.view.endEditing(true)
     }
     
     // MARK: - UITextFieldDelegate Methods
