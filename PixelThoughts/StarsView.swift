@@ -56,8 +56,6 @@ class StarsView: UIView {
             
             farCell = self.star(speed: 18, lifetime: Float(self.frame.size.height), size: CGSize(width:2, height:2), birthRate: 20, color: UIColor.whiteColor())
             
-        //TODO: add asteroid
-            
             else {
                 return
         }

@@ -10,8 +10,9 @@ import UIKit
 import SpriteKit
 import AVFoundation
 
-class ViewController: UIViewController, StarViewAnimation {
+class MainViewController: UIViewController, StarViewAnimation {
     
+    @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var button: UIButton!
     let duration = 60.0
@@ -35,6 +36,7 @@ class ViewController: UIViewController, StarViewAnimation {
         self.view.addSubview(star)
         self.view.sendSubviewToBack(stars)
         self.setupConstraints()
+        textfield.text = "Some thought"
         
         let player : AVAudioPlayer
         
@@ -56,7 +58,17 @@ class ViewController: UIViewController, StarViewAnimation {
         self.setupEndingScene()
     }
     
+    @IBAction func start(sender: AnyObject) {
+        if let text = self.textfield.text {
+            self.startAnimating(text)
+        }
+    }
     //MARK: Private
+    
+    func startAnimating(text: String) {
+        self.star.update(text: text, animated: true)
+        self.setupMovingScene()
+    }
     
     func setupMovingScene() {
         self.star.start(duration: duration)
